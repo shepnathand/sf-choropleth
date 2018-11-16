@@ -134,10 +134,5 @@ topo2geo tracts=- \
 topo2geo counties=- \
     < tmp/sf-topo.json \
     | ndjson-map 'd.properties = {"stroke": "#000", "stroke-opacity": 0.3}, d')\
-<<<<<<< HEAD:density-choropleth.sh
   | geo2svg -n --stroke none -p 1 -w 700 -h 350 \
   > dest/sf.svg
-=======
-  | geo2svg -n --stroke none -p 1 -w 960 -h 960 \
-  > dest/sf.svg
->>>>>>> e87e1b9c23dbf69a34967fa0a6a9ffe84e8ce32e:density-choropleth.sh
